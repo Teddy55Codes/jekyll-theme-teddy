@@ -55,6 +55,10 @@ p, li, br, a, span {
   line-height: 1.5;
 }
 
+ul, li {
+  margin: 4px 0 4px 0;
+}
+
 a:link {
   color: $link-normal;
 }
