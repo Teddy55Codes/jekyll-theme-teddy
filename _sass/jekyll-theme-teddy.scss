@@ -1,0 +1,87 @@
+@import "code-highlighting";
+@import "variables";
+@import "fonts";
+
+html {
+  background: $main-bg;
+  color: $text-color;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  margin: 3% 10% 5% 10%;
+}
+
+img {
+  object-fit: contain;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, li, br, a, span {
+  font-family: "Inter", Helvetica, Arial, serif;
+}
+
+h1 {
+  font-size: $h1-font-size;
+}
+
+h2 {
+  font-size: $h2-font-size;
+}
+
+h3 {
+  font-size: $h3-font-size;
+}
+
+h4 {
+  font-size: $h4-font-size;
+}
+
+h5 {
+  font-size: $h5-font-size;
+}
+
+h6 {
+  font-size: $h6-font-size;
+}
+
+p, li, br, a, span {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a:link {
+  color: $link-normal;
+}
+
+a:visited {
+  color: $link-visited;
+}
+
+blockquote {
+  border-radius: 0 10px 10px 0;
+  border-style: solid;
+  border-color: transparent transparent transparent #0071e0;
+  
+  margin: 10px 2px 10px 2px;
+  padding: 0 0 10px 20px;
+  
+  background: $blockquote-bg;
+}
+
+footer {
+  margin-top: 30px;
+  padding: 20px 0 20px 0;
+  background: $footer-bg;
+  height: 100%;
+  width: 100%;
+}
+
+footer span {
+  margin: 20px;
+}
