@@ -28,6 +28,22 @@ Or install it yourself as:
 
     $ gem install jekyll-theme-teddy
 
+## Configuration
+There are some variables you can use to customize this theme.
+
+### _config.yml
+* **source_repository_url**\
+  This will be used to link to your github repository and individual files.
+* **last_post**\
+  This is used to add a link to your latest post.
+
+### front matter
+* **title**\
+  Adds a h1 title.
+* **toc (true|false)**\
+  Auto generate table of contents
+
+
 ## Development
 
 To set up your environment to develop this theme, run `bundle install`.
