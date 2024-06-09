@@ -4,11 +4,11 @@ layout: default
 
 <div id="top-nav">
     {% unless page.url == "/" %}
-    <a href="{{ site.baseurl }}/"><- Back To Home Page</a>
+    <a id="home-link" href="{{ site.baseurl }}/"><- Back To Home Page</a>
     {% endunless %}
 
     {% if site.source_repository_url and site.source_repository_url_path_prefix %}
-    <a href="{{ site.source_repository_url }}/{{ site.source_repository_url_path_prefix }}/{{ page.path }}">To Source File</a>
+    <a id="source-link" href="{{ site.source_repository_url }}/{{ site.source_repository_url_path_prefix }}/{{ page.path }}">To Source File</a>
     {% endif %}
 </div>
 

@@ -104,16 +104,6 @@ footer span {
   grid-row: 1;
 }
 
-footer #github-icon {
-  height: 50px;
-  width: 50px;
-  margin: 10px 50px 10px 10px;
-  
-  grid-column: 3;
-  grid-row: 1;
-  justify-self: end;
-}
-
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -121,11 +111,42 @@ footer {
   align-items: center;
 }
 
-#toc {
-  margin: 0 0 30px 0;
-}
-
 #github-icon {
   height: 50px;
   width: 50px;
+  
+  margin: 10px 50px 10px 10px;
+
+  grid-column: 3;
+  grid-row: 1;
+  justify-self: end;
+}
+
+#top-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+
+  a {
+    text-decoration: inherit;
+    font-weight: bold;
+  }
+}
+
+#home-link {
+  grid-column: 1;
+  grid-row: 1;
+
+  justify-self: start;
+}
+
+#source-link {
+  grid-column: 3;
+  grid-row: 1;
+
+  justify-self: end;
+}
+
+#toc {
+  margin: 0 0 30px 0;
 }
