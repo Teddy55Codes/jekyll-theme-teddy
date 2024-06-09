@@ -1,3 +1,7 @@
+// Home Header
+$main-title: 50pt !default;
+$sub-title: 26pt !default;
+
 // Headers
 $h1-font-size: 30pt !default;
 $h2-font-size: 24pt !default;
@@ -6,8 +10,12 @@ $h4-font-size: 20pt !default;
 $h5-font-size: 18pt !default;
 $h6-font-size: 16pt !default;
 
+// General Colors
+$primary-color: #C9C9D1 !default;
+$primary-color-faded: rgba(201, 201, 209, 0.4) !default;
+
 // Text
-$text-color: #C9C9D1 !default;
+$text-color: $primary-color !default;
 
 // Background
 $main-bg: #1D1D26 !default;

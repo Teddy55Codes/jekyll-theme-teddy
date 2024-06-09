@@ -13,7 +13,7 @@ body {
 }
 
 main {
-  margin: 3% 15% 5% 15%;
+  margin: 0 15% 5% 15%;
 }
 
 img {
@@ -82,7 +82,7 @@ th, td {
   border-style: solid;
   border-width: 1px;
   padding: 3px;
-  border-color: $text-color;
+  border-color: $primary-color;
 }
 
 table {
