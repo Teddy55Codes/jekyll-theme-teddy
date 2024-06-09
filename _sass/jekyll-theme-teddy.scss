@@ -13,7 +13,7 @@ body {
 }
 
 main {
-  margin: 0 15% 5% 15%;
+  margin: 2% 15% 5% 15%;
 }
 
 img {
@@ -51,7 +51,7 @@ h6 {
 }
 
 p, li, br, a, span {
-  font-size: 16px;
+  font-size: $regular-text-size;
   line-height: 1.5;
 }
 
@@ -99,5 +99,33 @@ footer {
 }
 
 footer span {
-  margin: 20px;
+  margin: 10px 10px 10px 40px;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+footer #github-icon {
+  height: 50px;
+  width: 50px;
+  margin: 10px 50px 10px 10px;
+  
+  grid-column: 3;
+  grid-row: 1;
+  justify-self: end;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+}
+
+#toc {
+  margin: 0 0 30px 0;
+}
+
+#github-icon {
+  height: 50px;
+  width: 50px;
 }

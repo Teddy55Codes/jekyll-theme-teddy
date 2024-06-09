@@ -21,12 +21,17 @@ css_files:
 
 <main id="content" class="main-content" role="main">
     {% unless page.url == "/" %}
-    <a href="{{ site.baseurl }}/">Back To Home Page</a>
+    <a href="{{ site.baseurl }}/"><- Back To Home Page</a>
     {% endunless %}
     {{ content }}
 </main>
-<footer class="site-footer">
-    <span class="site-footer-credits">Hosted on <a href="https://pages.github.com">GitHub Pages</a> powered by <a href="https://jekyllrb.com">Jekyll</a>.</span>
+<footer>
+    <span>Hosted on<a href="https://pages.github.com">GitHub Pages</a> powered by <a href="https://jekyllrb.com">Jekyll</a>.</span>
+    {% if site.source_repository_url %}
+        <a id="github-icon" href="{{ site.source_repository_url }}">
+            <img alt="github-icon" src="{{ site.baseurl }}/assets/images/github-icon.png">
+        </a>    
+    {% endif %}
 </footer>
 {% if layout.js_files %}
     {% for js_file in layout.js_files %}

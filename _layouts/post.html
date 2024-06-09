@@ -3,4 +3,8 @@ layout: default
 ---
 <h1>{{ page.title }}</h1>
 
-{{ content | toc }}
+{{ content | toc_only }}
+
+<hr>
+
+{{ content | inject_anchors }}
