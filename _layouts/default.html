@@ -1,3 +1,8 @@
+---
+css_files:
+- default
+---
+
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
 <head>
@@ -5,8 +10,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     
-{% seo %}
-    <link rel="stylesheet" href="{{ site.baseurl }}{{ '/assets/css/style.css' }}">
+    {% seo %}
+    {% if layout.css_files %}
+        {% for css_file in layout.css_files %}
+            <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ css_file }}.css">
+        {% endfor %}
+    {% endif %}
 </head>
 <body>
 
@@ -19,5 +28,10 @@
 <footer class="site-footer">
     <span class="site-footer-credits">Hosted on <a href="https://pages.github.com">GitHub Pages</a> powered by <a href="https://jekyllrb.com">Jekyll</a>.</span>
 </footer>
+{% if layout.js_files %}
+    {% for js_file in layout.js_files %}
+        <script src="{{ site.baseurl }}/assets/js/{{ js_file }}.js"></script>
+    {% endfor %}
+{% endif %}
 </body>
 </html>
