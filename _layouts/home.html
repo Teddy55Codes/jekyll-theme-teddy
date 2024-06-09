@@ -1,0 +1,25 @@
+---
+layout: default
+css_files:
+- default
+- home
+js_files:
+- galaxy-animation
+---
+
+
+<canvas id="canvas"></canvas>
+<div id="home-banner">
+    <h1>{{ page.title }}</h1>
+    <h2>{{ page.subtitle }}</h2>
+    <div class="home-banner-links">
+        {% if site.source_repository_url %}
+        <a href="{{ site.source_repository_url }}">To Blog Source</a>
+        {% endif %}
+        {% if site.latest_post %}
+        <a href="{{ site.baseurl }}/{{ site.latest_post }}">Read The Latest Post</a>
+        {% endif %}
+    </div>
+</div>
+
+{{ content }}
