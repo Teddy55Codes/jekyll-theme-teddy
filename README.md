@@ -33,7 +33,10 @@ There are some variables you can use to customize this theme.
 
 ### _config.yml
 * **source_repository_url**\
-  This will be used to link to your github repository and individual files.
+  This will be used to link to your repository and individual files in your repository.
+* **source_repository_url_path_prefix**\
+  This is the url part that is between your source_repository_url and the page path.
+  On github this is `blob/main`
 * **last_post**\
   This is used to add a link to your latest post.
 
