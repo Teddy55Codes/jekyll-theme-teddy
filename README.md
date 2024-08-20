@@ -43,9 +43,32 @@ There are some variables you can use to customize this theme.
 ### front matter
 * **title**\
   Adds a h1 title.
-* **toc (true|false)**\
-  Auto generate table of contents
-
+* **toc**\
+  Auto generate table of contents if set to true.
+* **post (only in home layout)**\
+  This is used to generate the card view on the home page.
+  It accepts a list of objects. 
+  example:
+  ```
+  posts: [
+    {
+      "image": "Resources/img1.png", 
+      "image-alt": "image 1",
+      "link": "Posts/post1", 
+      "title": "Post 1", 
+      "description": "My Post 1", 
+      "footer-text": "January 1970"
+    },
+    {
+      "image": "Resources/img2.png", 
+      "image-alt": "image 2",
+      "link": "Posts/post2", 
+      "title": "Post 2", 
+      "description": "My Post 2", 
+      "footer-text": "January 1970"
+    }
+  }
+  ```
 
 ## Development
 
