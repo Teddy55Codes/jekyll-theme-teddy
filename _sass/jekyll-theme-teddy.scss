@@ -12,7 +12,13 @@ body {
   margin: 0;
 }
 
-@media (min-width: $large-screen) {
+@media (min-width: $extra-large-screen) {
+  main {
+    margin: 2% 25% 5% 25%;
+  }
+}
+
+@media (min-width: $large-screen) and (max-width: $extra-large-screen - 1px) {
   main {
     margin: 2% 20% 5% 20%;
   }
