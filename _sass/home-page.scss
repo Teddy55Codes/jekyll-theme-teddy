@@ -30,10 +30,6 @@ hr {
   margin: 30px 0 30px 0;
 }
 
-ul, li {
-  margin: 8px;
-}
-
 #canvas {
   position: absolute;
   top: 0;
@@ -61,6 +57,112 @@ ul, li {
     margin: 0 5% 0 5%;
 
     text-align: center;
+  }
+}
+
+@media (min-width: $extra-large-screen) {
+  main {
+    margin-right: 15%;
+    margin-left: 15%;
+  }
+
+  .outer-card {
+    width: 18.8%;
+    padding: .6%;
+  }
+}
+
+@media (min-width: $large-screen) and (max-width: $extra-large-screen - 1px) {
+  main {
+    margin-right: 12%;
+    margin-left: 12%;
+  }
+
+  .outer-card {
+    width: 18.5%;
+    padding: .75%;
+  }
+}
+
+@media (min-width: $medium-screen) and (max-width: $large-screen - 1px) {
+  main {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+
+  .outer-card {
+    width: 23%;
+    padding: 1%;
+  }
+}
+
+@media (min-width: $small-screen) and (max-width: $medium-screen - 1px) {
+  main {
+    margin-right: 8%;
+    margin-left: 8%;
+  }
+
+  .outer-card {
+    width: 47%;
+    padding: 1.5%;
+  }
+}
+
+@media (max-width: $small-screen - 1px) {
+  .outer-card {
+    width: 100%;
+    padding: 3% 1% 3% 1%;
+  }
+}
+
+#card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.card {
+  @include blankLink();
+  display: flex;
+  flex-direction: column;
+  border-radius: $card-border-radius;
+  background: $secondary-bg;
+  width: 100%;
+  height: 400px;
+
+  img {
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: $card-border-radius $card-border-radius 0 0;
+    height: 40%;
+    width: 100%;
+  }
+
+  h3 {
+    margin: 15px 5% 10px 5%;
+    height: 55px;
+    font-size: $card-header-font-size;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: $text-color;
+  }
+
+  p {
+    margin: 5px 4% 5px 4%;
+    height: 90px;
+    font-size: $card-content-font-size;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    color: $card-content-color;
+  }
+
+  .card-date {
+    padding-top: 25px;
+    height: 35px;
   }
 }
 

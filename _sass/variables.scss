@@ -2,6 +2,12 @@
 $main-title: 50pt !default;
 $sub-title: 26pt !default;
 
+// Home Card
+$card-header-font-size: 14pt !default;
+$card-content-font-size: 11pt !default;
+$card-content-color: rgba(201, 201, 209, 0.75) !default;
+$card-border-radius: 15px !default;
+
 // Header/Text Size
 $h1-font-size: 30pt !default;
 $h2-font-size: 24pt !default;
@@ -36,5 +42,5 @@ $link-visited: #7540b2 !default;
 // Responsive Sizes
 $extra-large-screen: 3500px !default;
 $large-screen: 2500px !default;
-$medium-screen: 1200px !default;
+$medium-screen: 1600px !default;
 $small-screen: 700px !default;
