@@ -23,3 +23,17 @@ js_files:
 </div>
 
 {{ content }}
+
+<div id="card-container">
+    {% for post in page.posts %}
+    <div class="outer-card">
+        <a class="card" href={{ post.link }}>
+            <img alt={{ post.image-alt }} src={{ post.image }}>
+            <h3>{{ post.title }}</h3>
+            <p>{{ post.description }}</p>
+            <p class="card-date">{{ post.footer-text }}</p>
+        </a>
+    </div>
+    {% endfor %}
+</div>
+
